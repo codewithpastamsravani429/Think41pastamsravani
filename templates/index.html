@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot</title>
+  <style>
+    #chat-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 300px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    #user-input {
+      width: 70%;
+      padding: 8px;
+    }
+    button {
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Chatbot</h2>
+  <div id="chat-box"></div>
+
+  <input type="text" id="user-input" placeholder="Type your message here..." />
+  <button onclick="sendMessage()">Send</button>
+
+  <!-- Link the JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

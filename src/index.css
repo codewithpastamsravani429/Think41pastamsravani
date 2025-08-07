@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dimension.dev Design System - Dark theme with purple/pink gradients */
+
+@layer base {
+  :root {
+    /* Dark theme background */
+    --background: 223 47% 6%;
+    --foreground: 210 40% 98%;
+
+    /* Cards and surfaces */
+    --card: 223 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    /* Overlays */
+    --popover: 223 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary brand colors - Purple/Pink gradient */
+    --primary: 278 94% 67%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary neutral */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted elements */
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    /* Accent colors */
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Error states */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 217.2 32.6% 17.5%;
+    --input: 223 47% 12%;
+    --ring: 278 94% 67%;
+
+    /* Brand gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(278 94% 67%), hsl(316 73% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(278 94% 67%) 0%, hsl(316 73% 52%) 35%, hsl(42 96% 65%) 100%);
+    --gradient-background: radial-gradient(ellipse at center, hsl(223 47% 8%) 0%, hsl(223 47% 6%) 100%);
+
+    /* Shadows with brand colors */
+    --shadow-glow: 0 0 50px hsl(278 94% 67% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(223 47% 4% / 0.8);
+
+    /* Animation timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    /* Will only work if `border-border` is defined in tailwind.config.js */
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
